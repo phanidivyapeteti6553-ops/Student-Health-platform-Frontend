@@ -1,0 +1,18 @@
+/* ProgramCard.css */
+.program-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.program-card:hover { transform: translateX(4px); box-shadow: var(--vh-shadow) !important; }
+.program-card-title { font-size: 1rem; font-weight: 700; color: var(--vh-forest); font-family: 'Playfair Display', serif; }
+.program-card-desc  { font-size: 13px; color: var(--vh-text-muted); line-height: 1.6; margin-bottom: 8px; }
+.program-tag { background: var(--vh-warm); color: var(--vh-text-muted); padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.program-tag i { margin-right: 3px; }
+.program-continue-btn {
+  background: transparent; color: var(--vh-sage); border: 1.5px solid var(--vh-sage);
+  border-radius: var(--vh-radius-sm); padding: 8px 18px; font-size: 12px;
+  font-weight: 600; cursor: pointer; transition: all 0.2s; white-space: nowrap;
+}
+.program-continue-btn:hover { background: var(--vh-sage); color: #fff; }
+.resource-category-badge { padding: 3px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; }
+.admin-action-btn { border-radius: 8px !important; font-size: 12px !important; font-weight: 600 !important; }
+.admin-action-btn.edit   { background: rgba(106,172,204,0.12) !important; color: #2a6880 !important; border: none !important; }
+.admin-action-btn.toggle { background: rgba(196,130,74,0.12)  !important; color: var(--vh-amber)  !important; border: none !important; }
+.admin-action-btn:hover  { opacity: 0.8; transform: scale(1.03); }

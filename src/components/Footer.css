@@ -1,0 +1,24 @@
+/* Footer.css */
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: rgba(245,240,232,0.55); font-size: 14px; transition: color 0.2s; }
+.footer-links a:hover { color: var(--vh-mint); }
+
+.footer-social {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(245,240,232,0.6); font-size: 16px; transition: all 0.2s;
+}
+.footer-social:hover { background: rgba(127,185,154,0.2); color: var(--vh-mint); }
+
+.footer-crisis-box {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px; padding: 16px;
+}
+.footer-crisis-link {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--vh-mint); font-size: 14px; font-weight: 600;
+  background: rgba(127,185,154,0.12); border-radius: 8px; padding: 8px 14px;
+  transition: background 0.2s;
+}
+.footer-crisis-link:hover { background: rgba(127,185,154,0.22); }

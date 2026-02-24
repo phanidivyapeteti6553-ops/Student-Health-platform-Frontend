@@ -1,0 +1,49 @@
+/* Home.css */
+.hero-demo-creds {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px; padding: 10px 16px; font-size: 12px;
+  color: rgba(245,240,232,0.65); display: inline-block;
+}
+.hero-demo-creds span { color: var(--vh-mint); font-weight: 600; margin-right: 6px; }
+.hero-demo-creds code { background: rgba(127,185,154,0.2); color: var(--vh-mint); padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+.hero-stat-icon { font-size: 1.4rem; color: var(--vh-mint); margin-bottom: 8px; display: block; }
+
+/* Steps */
+.home-steps-section { background: rgba(232,220,200,0.3); }
+.home-step-card {
+  background: var(--vh-card-bg); border: 1px solid var(--vh-border);
+  border-radius: var(--vh-radius); padding: 36px 28px;
+  box-shadow: var(--vh-shadow-sm); transition: all 0.3s ease;
+}
+.home-step-card:hover { transform: translateY(-6px); box-shadow: var(--vh-shadow); }
+.step-number { font-family: 'Playfair Display', serif; font-size: 3rem; color: rgba(26,58,42,0.08); line-height: 1; font-weight: 700; }
+.step-icon { font-size: 2rem; color: var(--vh-sage); margin-bottom: 16px; }
+
+/* Testimonials */
+.home-testimonial-card {
+  background: var(--vh-card-bg); border: 1px solid var(--vh-border);
+  border-radius: var(--vh-radius); padding: 28px;
+  box-shadow: var(--vh-shadow-sm); display: flex; flex-direction: column;
+  transition: all 0.3s ease;
+}
+.home-testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--vh-shadow); }
+.testimonial-stars { color: #f0a500; font-size: 1rem; letter-spacing: 2px; }
+.testimonial-quote { font-size: 14px; color: var(--vh-text-muted); line-height: 1.7; flex-grow: 1; margin-bottom: 20px; font-style: italic; }
+.testimonial-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--vh-mint), var(--vh-sage));
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 15px; flex-shrink: 0;
+}
+
+/* CTA */
+.home-cta-section { background: var(--vh-warm); }
+.home-cta-card {
+  background: linear-gradient(135deg, var(--vh-forest), #2a5a3e);
+  border-radius: var(--vh-radius-lg); padding: 60px 48px;
+  max-width: 720px; box-shadow: 0 24px 60px rgba(26,58,42,0.3);
+}
+
+@media (max-width: 768px) {
+  .home-cta-card { padding: 40px 24px; }
+}

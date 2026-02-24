@@ -1,0 +1,11 @@
+/* Resources.css */
+.category-pill {
+  padding: 7px 18px; border-radius: 20px; border: 2px solid var(--vh-warm);
+  background: #fff; font-size: 13px; font-weight: 600; color: var(--vh-text-muted);
+  cursor: pointer; transition: all 0.2s;
+}
+.category-pill:hover { border-color: var(--vh-mint); color: var(--vh-sage); }
+.category-pill.active {
+  background: var(--vh-forest); color: var(--vh-cream);
+  border-color: var(--vh-forest);
+}

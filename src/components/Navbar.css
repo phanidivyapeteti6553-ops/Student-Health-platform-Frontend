@@ -1,0 +1,8 @@
+/* Navbar.css */
+.vh-navbar .navbar-toggler:focus { box-shadow: none; }
+.vh-navbar .dropdown-menu { animation: fadeUp 0.2s ease; }
+.vh-navbar .dropdown-item:hover { background: rgba(127,185,154,0.1); color: var(--vh-forest); }
+.vh-navbar .dropdown-item { padding: 0.5rem 1rem; font-size: 0.875rem; }
+.vh-navbar .dropdown-item i { font-size: 0.9rem; }
+.vh-navbar .dropdown-divider { margin: 0.25rem 0; }
+.vh-navbar .dropdown-item-text { font-size: 0.875rem; }

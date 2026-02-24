@@ -1,0 +1,38 @@
+/* AdminDashboard.css */
+.admin-date-badge {
+  background: var(--vh-card-bg); border: 1px solid var(--vh-border);
+  border-radius: 10px; padding: 8px 16px; font-size: 13px;
+  color: var(--vh-text-muted); box-shadow: var(--vh-shadow-sm);
+}
+.stat-icon-box {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; margin-bottom: 16px;
+}
+
+.admin-tbl-btn {
+  width: 30px; height: 30px; border-radius: 8px; border: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 13px; transition: all 0.2s;
+}
+.admin-tbl-btn.edit   { background: rgba(106,172,204,0.14); color: #2a6880; }
+.admin-tbl-btn.toggle { background: rgba(196,130,74,0.14);  color: var(--vh-amber); }
+.admin-tbl-btn.delete { background: rgba(217,83,79,0.1);    color: var(--vh-danger); }
+.admin-tbl-btn:hover  { opacity: 0.7; transform: scale(1.08); }
+
+.resource-category-badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; display: inline-block; }
+.badge-mentalhealth { background: rgba(155,137,180,0.18); color: #6a5080; }
+.badge-fitness      { background: rgba(196,130,74,0.18);  color: #8b5a28; }
+.badge-nutrition    { background: rgba(74,124,89,0.18);   color: #2d6a3f; }
+.badge-wellness     { background: rgba(106,172,204,0.18); color: #2a6880; }
+
+/* Analytics bar chart */
+.analytics-bar-chart {
+  display: flex; align-items: flex-end; gap: 16px;
+  height: 180px; padding: 0 8px;
+}
+.chart-bar-col { display: flex; flex-direction: column; align-items: center; flex: 1; height: 100%; }
+.chart-bar-val { font-size: 11px; font-weight: 700; color: var(--vh-forest); margin-bottom: 6px; }
+.chart-bar-wrap { flex: 1; width: 100%; display: flex; align-items: flex-end; background: var(--vh-warm); border-radius: 6px 6px 0 0; overflow: hidden; }
+.chart-bar-fill { width: 100%; background: linear-gradient(180deg, var(--vh-mint), var(--vh-sage)); border-radius: 6px 6px 0 0; transition: height 0.8s ease; }
+.chart-bar-label { font-size: 10px; color: var(--vh-text-muted); margin-top: 8px; white-space: nowrap; }

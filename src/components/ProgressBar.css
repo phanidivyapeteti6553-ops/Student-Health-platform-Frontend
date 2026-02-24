@@ -1,0 +1,7 @@
+/* ProgressBar.css */
+.vh-progress-wrap { width: 100%; }
+.vh-progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.vh-progress-label  { font-size: 12px; color: var(--vh-text-muted); }
+.vh-progress-pct    { font-size: 12px; font-weight: 700; color: var(--vh-forest); }
+.vh-progress-track  { background: var(--vh-warm); border-radius: 8px; overflow: hidden; }
+.vh-progress-fill   { height: 100%; border-radius: 8px; transition: width 1s ease; }

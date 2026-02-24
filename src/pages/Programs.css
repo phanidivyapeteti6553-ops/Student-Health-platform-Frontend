@@ -1,0 +1,39 @@
+/* Programs.css */
+.programs-stat-pill {
+  background: var(--vh-card-bg); border: 1px solid var(--vh-border);
+  border-radius: 20px; padding: 6px 16px; font-size: 13px;
+  font-weight: 600; color: var(--vh-text-muted);
+}
+.programs-stat-pill.enrolled { color: var(--vh-sage); background: rgba(74,124,89,0.08); border-color: rgba(74,124,89,0.2); }
+
+.category-pill {
+  padding: 7px 18px; border-radius: 20px; border: 2px solid var(--vh-warm);
+  background: #fff; font-size: 13px; font-weight: 600; color: var(--vh-text-muted);
+  cursor: pointer; transition: all 0.2s;
+}
+.category-pill:hover { border-color: var(--vh-mint); color: var(--vh-sage); }
+.category-pill.active { background: var(--vh-forest); color: var(--vh-cream); border-color: var(--vh-forest); }
+
+/* Modal */
+.modal-backdrop-custom {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px); z-index: 300;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.enroll-modal {
+  background: var(--vh-cream); border-radius: var(--vh-radius-lg);
+  padding: 44px 40px; max-width: 480px; width: 100%;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.25); text-align: center;
+  animation: fadeUp 0.3s ease;
+}
+
+/* Toast */
+.vh-toast {
+  position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
+  background: var(--vh-forest); color: var(--vh-cream);
+  padding: 13px 28px; border-radius: 40px; font-size: 14px; font-weight: 600;
+  box-shadow: 0 8px 32px rgba(26,58,42,0.3); z-index: 400;
+  white-space: nowrap;
+}
+
+.program-tag { background: var(--vh-warm); color: var(--vh-text-muted); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; display: inline-block; }

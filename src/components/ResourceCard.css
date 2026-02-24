@@ -1,0 +1,47 @@
+/* ResourceCard.css */
+.resource-card { border-radius: var(--vh-radius) !important; overflow: hidden; }
+.resource-thumb {
+  height: 130px; display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.resource-emoji { font-size: 3rem; }
+.resource-status-badge {
+  position: absolute; top: 10px; right: 10px;
+  padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: capitalize;
+}
+.resource-status-badge.status-active   { background: rgba(74,124,89,0.2);  color: var(--vh-sage); }
+.resource-status-badge.status-pending  { background: rgba(196,130,74,0.2); color: var(--vh-amber); }
+.resource-status-badge.status-inactive { background: rgba(0,0,0,0.1);      color: #888; }
+
+.resource-category-badge {
+  padding: 3px 12px; border-radius: 20px; font-size: 11px; font-weight: 700;
+}
+.resource-title {
+  font-size: 1rem; font-weight: 700; color: var(--vh-forest);
+  font-family: 'Playfair Display', serif; margin-bottom: 8px;
+}
+.resource-desc { font-size: 13px; color: var(--vh-text-muted); line-height: 1.6; margin-bottom: 16px; }
+.resource-meta { padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.06); }
+.meta-item { font-size: 12px; color: var(--vh-text-muted); }
+.meta-item i { margin-right: 4px; }
+
+.resource-read-btn {
+  border: none; background: none; color: var(--vh-sage);
+  font-weight: 700; font-size: 13px; cursor: pointer; padding: 0;
+  transition: color 0.2s;
+}
+.resource-read-btn:hover { color: var(--vh-forest); }
+
+.resource-footer {
+  padding: 10px 16px;
+  background: rgba(245,240,232,0.5);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  display: flex; justify-content: space-between;
+  font-size: 11px; color: var(--vh-text-muted);
+}
+
+.admin-action-btn { border-radius: 8px !important; font-size: 12px !important; font-weight: 600 !important; }
+.admin-action-btn.edit   { background: rgba(106,172,204,0.12) !important; color: #2a6880 !important; border: none !important; }
+.admin-action-btn.toggle { background: rgba(196,130,74,0.12)  !important; color: var(--vh-amber)  !important; border: none !important; }
+.admin-action-btn.delete { background: rgba(217,83,79,0.1)    !important; color: var(--vh-danger) !important; border: none !important; }
+.admin-action-btn:hover  { opacity: 0.8; transform: scale(1.03); }
